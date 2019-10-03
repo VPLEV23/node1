@@ -1,8 +1,8 @@
-import { Router } from 'express';
-import equationRouter from'./equation';
+const Router = require("express");
+const equationRouter = require("./equation");
 
 const apiRouter = new Router();
 
-apiRouter.use('/equation', equationRouter);
+apiRouter.use("/equation", equationRouter);
 
-export default apiRouter;
+module.exports = apiRouter;
